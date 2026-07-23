@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "inbio-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [{ "pattern": "mcp.in.bio", "custom_domain": true }],
+  "durable_objects": {
+    "bindings": [{ "name": "InbioMCP", "class_name": "InbioMCP" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["InbioMCP"] }]
+}
