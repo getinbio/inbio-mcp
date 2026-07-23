@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.www-in-bio/inbio",
+  "description": "Official in.bio MCP server: shorten URLs, styled QR codes, and click analytics. No API key needed.",
+  "repository": {
+    "url": "https://github.com/getinbio/inbio-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://in.bio",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.in.bio/mcp"
+    }
+  ]
+}
